@@ -10,6 +10,7 @@ const Login = () => {
                <input type="text" name="name" placeholder='Your Email' className="border w-full mb-4 px-2 py-2 mx-4"/>
                <input type="text" name="name" placeholder='Your Mobile' className="border w-full mb-4 px-2 py-2 mx-4"/>
                <input type="text" name="name" placeholder='Five digit pin' className="border w-full mb-4 px-2 py-2 mx-4"/>
+               <input className='btn btn-secondary w-full mb-4' type="submit" value="Login" />
            </form>
            <p className="text-center mb-5">New to Account? Please <Link to="/register" className="text-blue-500">Register</Link></p>
        </div>
