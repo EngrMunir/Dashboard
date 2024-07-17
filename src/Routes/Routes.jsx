@@ -1,16 +1,26 @@
 import { createBrowserRouter } from "react-router-dom";
-import Dashboard from "../Layout/Dashboard";
-import UserManagement from "../pages/UserManagement/UserManagement";
+import Main from "../Layout/Main";
+import Register from "../pages/Register/Register";
+import Login from "../pages/Login/Login";
+import Home from "../pages/Home/Home";
 
 export const router = createBrowserRouter([
     {
       path: "/",
-      element: <Dashboard></Dashboard>,
+      element: <Main></Main>,
       children:[
         {
-            path:'userManagement',
-            element:<UserManagement></UserManagement>
+            path:'/',
+            element:<Home></Home>
         },
+        {
+          path:'/login',
+          element:<Login></Login>
+        },
+        {
+          path:'/register',
+          element:<Register></Register>
+        }
       ]
     },
   ]);

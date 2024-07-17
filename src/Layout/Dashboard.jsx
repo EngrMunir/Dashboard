@@ -1,4 +1,3 @@
-import React from 'react';
 import { Outlet } from 'react-router-dom';
 
 const Dashboard = () => {
@@ -10,6 +9,12 @@ const Dashboard = () => {
                     <li>My Profile</li>
                     <li>User Management</li>
                     <li>System Monitoring</li>
+                    <li>Transaction Management</li>
+                    <li>Transaction History</li>
+                    <li>Balance Inquiry</li>
+                    <li>Cash In</li>
+                    <li>Cash Out</li>
+                    <li>Send Money</li>
                 </ul>
             </div>
             {/* content */}
